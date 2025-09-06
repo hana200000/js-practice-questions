@@ -32,7 +32,7 @@ function writeNumber(){
     } 
 }
 //question 3
-function sumOdd(){
+function sumOdd1(){
 let numbers = [11, 17, 13, 12, 5];
 let sum =0;
 for (let num of numbers){
@@ -41,6 +41,32 @@ for (let num of numbers){
     }
 } 
 console.log("Sum of all odd values: " + sum);
+}
+
+//another answer to question 3
+function sumOdd2(){
+    let num1=parseInt(prompt("Enter number 1:"));
+    let num2=parseInt(prompt("Enter number 2:"));
+    let num3=parseInt(prompt("Enter number 3:"));
+    let num4=parseInt(prompt("Enter number 4:"));
+    let num5=parseInt(prompt("Enter number 5:"));
+    let sum=0;
+    if (num1 %2!==0){
+        sum+=num1;
+    }
+    if (num2 %2!==0){
+        sum+=num2;
+    }
+    if (num3 %2!==0){
+        sum+=num3;
+    }
+    if (num4 %2!==0){
+        sum+=num4;
+    }
+    if (num5 %2!==0){
+        sum+=num5;
+    }
+    console.log(sum);
 }
 
 //qurstion 4
@@ -140,4 +166,5 @@ function even_odd(){
     else{
         console.log("Odd");
     }
+
 }
